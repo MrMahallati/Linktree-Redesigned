@@ -29,10 +29,10 @@ body {
   text-decoration: none;
   font-family: sans-serif;
   border-radius: 5px;
-  margin: 0 25px 6px 25px;
-  transition: ease 0.5s;
+  margin: 0 150px 6px 150px;
+  transition: ease 0.8s;
 }
 .link:hover {
-  transition: 0.5s;
-  margin: 0 10px 6px 10px;
+  transition: 0.8s;
+  margin: 0 80px 6px 80px;
 }
