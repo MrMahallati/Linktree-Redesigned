@@ -1,6 +1,6 @@
 body {
   transition: 0.5s ease;
-  background-color: #c4e7f3;
+  background-color: rgb(137, 195, 218);
 }
 .githublogo {
   position: sticky;
