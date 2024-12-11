@@ -9,7 +9,8 @@
 
   </head>
   <body>
-  
+
+  <div class="header">
     <div>
       <a
         href="https://github.com/MrMahallati/Linktree-Redesigned"
@@ -21,12 +22,13 @@
           alt="My Github"
       />
     </a>
-    <div>
+    
       <button style="background-color: transparent; border: none;" onclick="toggleBackgroundColor()" >
   <img id="mode-icon" src="moon-icon.png" alt="Mode Icon" class="Darkicon" /> 
 </button>
-  
-</div>
+    
+
+    </div>
     <br />
     <div class="container">
       <img
@@ -49,32 +51,21 @@
     <a href="https://youtube.com" class="link" target="_blank">Youtube</a>
     <a href="https://Twitter.com" class="link" target="_blank">Twitter</a>
     <script>
-     function toggleBackgroundColor() {
-        const body = document.body;
-        const icon = document.getElementById('mode-icon');
-        const links = document.querySelectorAll('.link'); // Select all link elements
+       function toggleBackgroundColor() {
+    const body = document.body;
+    const icon = document.getElementById('mode-icon');
 
-        if (body.style.backgroundColor === "rgb(43, 69, 125)") { // Softer dark blue
-          body.style.backgroundColor = "rgb(137, 195, 218)"; // Softer light blue
-          icon.src = "moon-icon.png"; // Change to sun icon for light mode
-          document.body.style.color = "black";
-
-          // Change background color of links to black in light mode
-          links.forEach(link => {
-            link.style.backgroundColor = "white";
-            link.style.color = "black"; // Optional: change text color
-          });
-        } else {
-          document.body.style.color = "white";
-          body.style.backgroundColor = "#2b457d"; // Softer dark blue
-          icon.src = "sun-icon.png"; // Change to moon icon for dark mode
-
-          // Change background color of links to white in dark mode
-          links.forEach(link => {
-            link.style.backgroundColor = "white";
-            link.style.color = "black"; // Optional: change text color
-          });
-        }
-      }    </script>
+    if (body.style.backgroundColor === "rgb(43, 69, 125)") { // Softer dark blue
+        body.style.backgroundColor = "#c4e7f3"; // Softer light blue
+        icon.src = "moon-icon.png"; // Change to sun icon for light mode
+        document.body.style.color = "black"
+      } else {
+        document.body.style.color = "white"
+        
+        body.style.backgroundColor = "#2b457d"; // Softer dark blue
+        icon.src = "sun-icon.png"; // Change to moon icon for dark mode
+    }
+}     
+      </script>
   </body>
 </html>
