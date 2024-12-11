@@ -1,7 +1,6 @@
 body {
-  background: lightblue;
-  padding: 0;
-  margin: 0;
+  transition: 0.5s ease;
+  background-color: #c4e7f3;
 }
 .githublogo {
   position: sticky;
@@ -12,6 +11,9 @@ body {
   margin: 10px 0 0 10px;
 }
 
+.Darkicon:hover {
+  cursor: pointer;
+}
 .gigachad {
   width: 150px;
   border-radius: 100px;
@@ -35,4 +37,14 @@ body {
 .link:hover {
   transition: 0.8s;
   margin: 0 80px 6px 80px;
+}
+.Darkicon {
+  margin-left: 4px;
+  width: 54px;
+  border-radius: 5px;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
